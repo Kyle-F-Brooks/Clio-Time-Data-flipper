@@ -1,4 +1,4 @@
-![Void Acoustics](path)
+![Void Acoustics](https://github.com/Kyle-F-Brooks/Clio-Time-Data-flipper/blob/main/Images/Void%20Logo%20%5BWHITE%5D.png)
 
 # Clio Time Data Flipper
 Author: Kyle Brooks
