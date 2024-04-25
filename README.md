@@ -2,6 +2,7 @@
 
 # Clio Time Data Flipper
 Author: Kyle Brooks
+Company: Void Acoustics Research Ltd.
 
 ## Description
 A script to mirror the Clio Time Data format files for use with Ease to create GSS(Generic Sound Source)
