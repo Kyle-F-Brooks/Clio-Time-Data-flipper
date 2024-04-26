@@ -52,16 +52,18 @@ def copy_and_rename(src_path, dest_path, new_name):
     new_path = f"{dest_path}/{new_name}"
     shutil.copy(src_path, new_path)
 
-def rename_files(inputPath, outputPath, newNames):
+def rename_files(inputPath, outputPath, originalNames, newNames):
     # iterate over files in directory
-    numOfFiles=0
     for filename in os.listdir(inputPath):
         # if numOfFiles < 180:
         f = os.path.join(inputPath, filename)
         # checking if it is a file
-        if os.path.isfile(f):
-            copy_and_rename(os.path.abspath(f), outputPath, newNames[numOfFiles])
-            numOfFiles += 1
+        print(filename)
+        for i,j in enumerate(originalNames):
+            if j==filename:
+                print(j)
+                if os.path.isfile(f):
+                    copy_and_rename(os.path.abspath(f), outputPath, newNames[i])
             # print(os.path.abspath(f))
         # elif numOfFiles == 180:
         #     f = os.path.join(inputPath, filename)
@@ -89,4 +91,4 @@ print(len(originalOrder))
 print(len(names))
 
 # copy_and_rename("C://Users//Kyle//Documents//Scripts//Clio Time Data flipper//test.txt", "C://Users//Kyle//Documents//Scripts//Clio Time Data flipper//Output Data", "jeff.txt")
-rename_files(inputPath, outputPath, names)
+rename_files(inputPath, outputPath, originalOrder, names)
